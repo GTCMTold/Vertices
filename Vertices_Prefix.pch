@@ -1,0 +1,37 @@
+//
+// Prefix header for all source files of the 'Vertices' target in the 'Vertices' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+
+
+#define kTouchesBegan 1
+#define kTouchesMoved 2
+#define kTouchesEnded 3
+
+#define kPreviewVoice 0
+#define kVoiceOne 1
+#define kVoiceTwo 2
+#define kVoiceThree 3
+
+#define APPDELEGATE [[UIApplication sharedApplication] delegate]
+#define SETUPVIEWCONTROLLER [[[APPDELEGATE tabBarController] viewControllers] objectAtIndex:0]
+#define RECEIVEDVIEWCONTROLLER [[[APPDELEGATE tabBarController] viewControllers] objectAtIndex:2]
+#define SENTVIEWCONTROLLER [APPDELEGATE svc]
+#define EDITVIEWCONTROLLER [[[APPDELEGATE tabBarController] viewControllers] objectAtIndex:1]
+
+#define KEYWINDOW [[UIApplication sharedApplication] keyWindow]
+
+#define kAllPeers 0
+
+#define MAX_TOUCHES 5
+
+#define SWAP(t,x,y)     { t = x; x = y; y = t; }
+
+#define MAX_VOICES 3	// This is the maximum number of voices for projected sound playback. This is not counting the preview voice
+#define MAX_PEERS 4
+
+
+#endif
